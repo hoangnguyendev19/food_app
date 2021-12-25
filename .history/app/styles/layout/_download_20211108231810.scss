@@ -1,0 +1,50 @@
+.download {
+    background: linear-gradient(0deg, rgba(37, 43, 66, 0.4), rgba(37, 43, 66, 0.4)), url("./images/img-download.jpg");
+    @include size(100%, 51.6rem);
+    @include flexBox(center, center);
+    text-align: center;
+    &__heading {
+        font-size: 4rem;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        color: #fff;        
+        margin-bottom: 3rem;
+    }
+    &__desc {
+        font-weight: 500;
+        font-size: 2.4rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 4rem;
+        color: white;
+    }
+    &__btn {
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        border: 1px solid white;
+        color: white;
+        padding: 1.8rem 3rem;
+        background-color: transparent;
+        border-radius: 1rem;
+        transition: all 0.25s linear;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+    &__btn:last-child {
+        margin-left: 1rem;
+    }
+    @include maxWidth(1023px) {
+        &__heading {
+            font-size: 3rem;
+        }
+        &__desc {
+            font-size: 2rem;
+        }
+    }
+    @include maxWidth(767px) {
+        background: $secondary-color;
+    }
+}

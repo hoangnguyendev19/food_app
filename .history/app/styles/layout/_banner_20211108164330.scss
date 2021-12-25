@@ -1,0 +1,28 @@
+.banner {
+    &__top {
+        @include size(100%, 62rem);
+        background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url("./images/img-banner.jpg");
+        @include flexBox(center, center);
+    }
+    &__content {
+        @include size(94rem, 100%);
+        margin-top: 7.2rem;
+        margin-bottom: 14.6rem;
+    }
+    &__title { 
+        display: inline-block;
+        font-weight: 700;
+        font-size: 2.4rem;
+        letter-spacing: 0.1px;
+        line-height: 3.6rem;
+        color: #F6F6F6;
+    }
+    &__heading {
+        font-family: $secondary-font;
+        font-weight: bold;
+        font-size: 5.8rem;
+        line-height: 8rem;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+}

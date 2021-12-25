@@ -1,0 +1,14 @@
+.header {
+    &__image {
+        object-fit: cover;
+    }
+    &__top {
+        @include flexBox(center, space-between);
+    }
+    &__menu {
+        @include flexBox();
+    }
+    &__item:not(:first-child) {
+        margin-left: 10.4rem;
+    }
+}

@@ -1,0 +1,22 @@
+.footer {
+    &__main {
+        @include flexBox(stretch, space-between);
+    }
+    &__image {
+        width: calc(33.33% - 16rem);
+    }
+    &__social {
+        width: calc(33.33% - 16rem);
+        @include flexBox(center);
+    }
+    &__icons {
+        color: $primary-color;
+        font-size: 3.5rem;
+    }
+    &__icons:not(:last-child) {
+        margin-right: 2.8rem;
+    }
+    &__copyright {
+        width: calc(33.33% - 16rem);
+    }
+}
