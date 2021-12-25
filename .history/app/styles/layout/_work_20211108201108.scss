@@ -1,0 +1,14 @@
+.work {
+    &__caption {
+        font-family: $secondary-font;
+        font-weight: 600;
+        font-size: 4.4rem;
+        letter-spacing: 0.1px;
+        color: #000;
+        opacity: 0.8;
+        margin-top: 7rem;
+        margin-bottom: 6rem;
+        margin: 0 auto;
+        display: inline-block;
+    }
+}

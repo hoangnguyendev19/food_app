@@ -1,0 +1,11 @@
+.banner {
+    &__top {
+        @include size(100%, 62rem);
+        background: linear-gradient(0deg, rgba(23, 16, 16, 0.6), rgba(23, 16, 16, 0.6)), url("./images/img-banner.jpg");
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &__content {
+        text-align: center;
+    }
+}

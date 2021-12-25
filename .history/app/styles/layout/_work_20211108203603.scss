@@ -1,0 +1,58 @@
+.work {
+    text-align: center;
+    &__caption {
+        font-family: $secondary-font;
+        font-weight: 600;
+        font-size: 4.4rem;
+        letter-spacing: 0.1px;
+        color: #000;
+        opacity: 0.8;
+        margin-top: 7rem;
+        margin-bottom: 6rem;
+        display: inline-block;
+    }
+    &__item {
+        @include flexBox(center);
+        margin: 11rem 0;
+    }
+    &__item--reverse {
+        flex-direction: row-reverse;
+    }
+    &__image {
+        width: 50%;
+        @include flexBox(stretch, center);
+        filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+    }
+    &__content {
+        width: 50%;
+        text-align: start;
+    }
+    &__content--reverse {
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 2.4rem;
+        letter-spacing: 0.1px;
+        color: $primary-color;
+        display: inline-block;
+        margin-bottom: 3rem;
+    }
+    &__heading {
+        font-weight: bold;
+        font-size: 4rem;
+        letter-spacing: 0.2px;
+        color: $secondary-color;
+        line-height: 1.3;
+        margin-top: 0;
+        margin-bottom: 4.5rem;
+    }
+    &__desc {
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 1.3;
+        letter-spacing: 0.2px;
+        color: $third-color;
+        margin: 0;
+        width: 47rem;
+    }
+}

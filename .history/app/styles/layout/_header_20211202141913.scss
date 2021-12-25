@@ -1,0 +1,62 @@
+.header {
+    @include size(100%, 15.7rem);
+    &__image {
+        display: inline-block;
+    }
+    &__top {
+        @include flexBox(center, space-between);
+    }
+    &__menu {
+        @include flexBox(center);
+    }
+    &__item:not(:first-child) {
+        margin-left: 10.4rem;
+    }
+    &__link {
+        font-size: 1.6rem;
+        color: $secondary-color;
+        font-weight: 600;
+        transition: all 0.2s linear;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    &__bars {
+        font-size: 3rem;
+        display: none;
+    }
+    @include maxWidth(1399px) {
+        height: 12rem;
+    }
+    @include maxWidth(1023px) {
+        height: 100%;
+    }
+    @include maxWidth(767px) {
+        &-menu {
+            width: 30rem;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: 0px 7px 29px 0px rgba(0, 0, 0, 0.205);
+            list-style: none;
+            transform: translateX(0);
+            transition: transform 0.25s linear;
+        }
+        &-menu.is-show {
+            transform: translateX(0);
+        }
+        &-link {
+            display: block;
+            padding: 20px 15px;
+            color: #333;
+        }
+        // &__bars {
+        //     display: block;
+        // }
+        &__image img{
+            @include size(15rem, 8rem);
+            object-fit: cover;
+        }
+    }
+}

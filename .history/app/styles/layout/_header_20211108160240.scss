@@ -1,0 +1,10 @@
+.header {
+    &__image {
+        object-fit: cover;
+    }
+    &__top {
+        // @include flexBox(center, space-between);
+        display: flex;
+    }
+
+}

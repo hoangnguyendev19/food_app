@@ -1,0 +1,24 @@
+.header {
+    @include size(100%, 15rem);
+    &__image {
+        object-fit: cover;
+    }
+    &__top {
+        @include flexBox(center, space-between);
+    }
+    &__menu {
+        @include flexBox(center);
+    }
+    &__item:not(:first-child) {
+        margin-left: 10.4rem;
+    }
+    &__link {
+        font-size: 1.6rem;
+        color: $secondary-color;
+        font-weight: 600;
+        transition: all 0.2s linear;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

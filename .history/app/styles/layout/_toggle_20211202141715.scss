@@ -1,0 +1,23 @@
+@include maxWidth(767px) {
+    .header {
+        &-menu {
+            width: 30rem;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: 0px 7px 29px 0px rgba(rgba(0, 0, 0, 0.205));
+            list-style: none;
+            transform: translateX(0);
+            transition: transform 0.25s linear;
+        }
+        &-menu.is-show {
+            transform: translateX(0);
+        }
+        &-link {
+            display: block;
+            padding: 20px 15px;
+            color: #333;
+        }
+    }    
+}
